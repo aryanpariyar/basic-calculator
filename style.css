@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#091921, #142129);
+}
+
+form input {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.calculator span {
+    display: grid;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background: #0c2835;
+    place-items: center;
+    border: 0.3px solid rgba(0, 0, 0, 1);
+}
+
+.calculator span:active {
+    background: #74ff3b;
+    color: #111;
+}
+
+.calculator span.clear {
+    grid-column: span 2;
+    width: 160px;
+    cursor: pointer;
+    background: #ff3077;
+}
+
+.calculator span.plus {
+    grid-row: span 2;
+    height: 160px;
+    cursor: pointer;
+}
+
+.calculator span.equal {
+    background: #64f1af;
+    cursor: pointer;
+    border-bottom-right-radius: 8px;
+}
+
+.calculator span.multiply {
+    cursor: pointer;
+}
+
+.calculator span.zero {
+    border-bottom-left-radius: 8px;
+}
+
+.calculator span.divide {
+    cursor: pointer;
+}
+
+.calculator span.minus {
+    cursor: pointer;
+}
